@@ -1,0 +1,82 @@
+{
+    "viewer_settings": {
+        "color_mode": 1,
+        "field_of_view": 44,
+        "track_medium_speed_color_treshold": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+        ],
+        "track_fast_speed_color_treshold": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+        ],
+        "show_track_label": false,
+        "is_cartesian_grid": true,
+        "point_size": 3.978,
+        "dynamic_point_size": 4.022,
+        "use_heatmap_filter": false,
+        "viewer_3d_grid_max_x": 20,
+        "viewer_3d_grid_max_y": 20,
+        "viewer_3d_grid_scale_y": 1,
+        "viewer_3d_grid_step_x": 2,
+        "viewer_3d_grid_step_y": 2,
+        "coloring": {
+            "grid_transparency": 0.5,
+            "minz": -6,
+            "maxz": 6,
+            "scheme": 0,
+            "max_range": 20,
+            "min_range": 0,
+            "min_doppler": -3,
+            "max_doppler": 3,
+            "min_snr": 0,
+            "max_snr": 1000
+        }
+    },
+    "radar0": {
+        "calibration_settings": {
+            "calibrated": true,
+            "phi": 0,
+            "psi": 0,
+            "theta": 0,
+            "x": 0,
+            "y": 0,
+            "z": 0.0
+        },
+        "filtering": {
+            "common": {
+                "min_doppler1": -1000,
+                "max_doppler1": 1000,
+                "min_range": 0,
+                "max_range": 1000,
+                "min_x": -1000,
+                "max_x": 1000,
+                "min_y": -1000,
+                "max_y": 1000,
+                "min_z": -1000,
+                "max_z": 1000,
+                "min_snr": 0
+            },
+            "fences": {
+                "use_fences_removal": false,
+                "fences_visible": false
+            }
+        }
+    }
+}
