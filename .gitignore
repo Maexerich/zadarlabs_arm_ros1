@@ -1,0 +1,10 @@
+# Ignore build files
+build/
+devel/
+install/
+
+# Ignore logs and temporary files
+logs/
+*.swp
+*.pyc
+*.bag
