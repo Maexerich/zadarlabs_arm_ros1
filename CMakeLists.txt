@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(ZadarLabs)
+project(zadarlabs_arm_ros1)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ZadarLabs</name>
+  <name>zadarlabs_arm_ros1</name>
   <version>0.0.1</version>
   <description>Zadar Labs ROS package</description>
   <maintainer email="your.email@example.com">Your Name</maintainer>

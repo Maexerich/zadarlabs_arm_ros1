@@ -1,0 +1,90 @@
+{
+    "radar_number": 1,
+    "runtime_mode": "live-edge",
+    "dqe_mode": "vehicle",
+    "teardown_on_quit": true,
+    "reset_sensors": true,
+    "bus_clock_sync_enabled": false,
+    "bus_sync_clock_topic": "/clock",
+    "viewer_settings": {
+        "color_mode": 1,
+        "field_of_view": 44,
+        "cluster_size": 4,
+        "track_medium_speed_color_treshold": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+        ],
+        "track_fast_speed_color_treshold": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+        ],
+        "show_track_label": false,
+        "is_cartesian_grid": true,
+        "keep_last_points": true,
+        "point_size": 3,
+        "dynamic_point_size": 3.015,
+        "track_size": 4,
+        "use_heatmap_filter": false,
+        "viewer_3d_grid_max_x": 400,
+        "viewer_3d_grid_max_y": 400,
+        "viewer_3d_grid_scale_y": 1,
+        "viewer_3d_grid_step_x": 10,
+        "viewer_3d_grid_step_y": 10,
+        "coloring": {
+            "grid_transparency": 0.5,
+            "minz": -5,
+            "maxz": 5,
+            "scheme": 0,
+            "max_range": 400,
+            "min_range": 0,
+            "min_doppler": -3,
+            "max_doppler": 3,
+            "min_snr": 0,
+            "max_snr": 1000
+        }
+    },
+    "radar0": {
+        "radar_type": "zPrime",
+        "serial_number": "W1",
+        "name": "zPrime_W1",
+        "config_mode": "dynamic",
+        "frame_id": "zs240",
+        "radar_visible": true,
+        "mode": 85,
+        "data_bus_settings": {
+            "interface": "zi_ip",
+            "config_num": 0,
+            "pps_mode": 0,
+            "can_node_id": 0,
+            "command_port": "",
+            "command_rate": 0,
+            "data_rate": 0,
+            "data_port": "/dev/ttyUSB1",
+            "can_bus_num": 0,
+            "ip_addr": "192.168.0.10",
+            "port": 7777
+        },
+        "firmware_settings": {
+            "sbl_version": "",
+            "fw_version": "",
+            "fw_msg_logfile": "",
+            "report_fw_debug_msgs": false
+        }
+    }
+}
