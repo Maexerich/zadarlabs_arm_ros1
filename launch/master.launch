@@ -10,7 +10,7 @@
         <arg name="cam_on" value="false"/>
         <arg name="radar_on" value="true"/>
         <arg name="radar_trigger" value="false"/>
-        <arg name="imu_on" value="false"/> <!-- Change to TRUE -->
+        <arg name="imu_on" value="true"/>
     </include>
 
     <!-- ROS Bag recording using record_bag.sh -->

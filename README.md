@@ -1,14 +1,24 @@
+# Bugs
+> **Note:** When booting up jetson, remove ethernet cable from jetson's ethernet port. For some reason the jetson will not boot properly with this connected!
+
 # Compatibility
 - ARM system architecture
 - ROS1 Noetic
-- must install dependencies via `sudo ./install_dependencies.sh`
+- must install dependencies via `sudo ./install_dependencies.sh` _(described in more detail below)_
 
 # Installation
-- install dependencies `sudo ./install_dependencies.sh`
+- install dependencies `sudo ./install_dependencies.sh` _(described in more detail below)_
 - make .AppImage executable: `chmod +x lib/Zadar_Run-aarch64.AppImage`
 
-# Accessing jetson
+# Accessing jetson / recording data
 Jetson is set up with username and password 'radar'.
+
+To record data, we use the `zadarlabs_arm_ros1` package with the `master.launch` file.
+There are different ways available to start and stop the recording;
+- via the web-interface (experimental)
+- via ssh & using the terminal (robust, but more advanced)
+Details on the `master.launch` can be found below.
+
 ## Web-interface: to record data
 The test setup proposed, includes a self hosted website
 which can be used to start and stop ros-recordings.
@@ -28,6 +38,41 @@ Open-ssh is installed, so accessing via SSH at the IP address should work too.
 ssh radar@10.10.10.241:22 # Assuming the ip from above
 ssh radar@radar  # Might work too
 ssh radar@<ip_address> # General approach
+```
+
+# `master.launch`: Details
+This master-launch file is used to record data using the radar test bench.
+The sensors supported are:
+- a TI-AWR1843 radar sensor, connected via USB
+- a ZadarLabs zPrime sensor, connected via Ethernet.
+
+## TI-AWR1843 configuration
+_TODO_
+- ensure it shows up at `/dev/ttyUSB0` and `/dev/ttyUSB1` via micro-USB cable
+- coordinate frame
+
+## ZadarLabs configuration
+_TODO_
+- fix ethernet subnet
+- use their docs.
+
+## IMU configuration
+- connected via SPI
+- how to configure SPI on jetson:
+```bash
+cd /opt/nvidia/jetson-io
+sudo ./jetson-io.py
+```
+Then enable SPI and reboot.
+To ensure SPI is loaded, use the following command:
+```bash
+sudo modprobe spidev
+```
+To automate this;
+```bash
+sudo nano /etc/modules-load.d/spidev.conf # Create this file
+# Add the following line to the file
+spidev
 ```
 
 # Things to document
