@@ -1,5 +1,8 @@
-# Bugs
-> **Note:** When booting up jetson, remove ethernet cable from jetson's ethernet port. For some reason the jetson will not boot properly with this connected!
+# Attention
+> **Bugs:**
+- When booting up jetson, remove ethernet cable from jetson's ethernet port. For some reason the jetson will not boot properly with this connected!
+**Warnings:**
+- The ZadarLabs sensor gets extremely warm when in use for prolonged time (>20min). Be careful when handling and do not leave unattended!!!
 
 # Compatibility
 - ARM system architecture
@@ -45,6 +48,7 @@ This master-launch file is used to record data using the radar test bench.
 The sensors supported are:
 - a TI-AWR1843 radar sensor, connected via USB
 - a ZadarLabs zPrime sensor, connected via Ethernet.
+- a IMU sensor connected via SPI
 
 ## TI-AWR1843 configuration
 _TODO_
