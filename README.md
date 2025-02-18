@@ -8,8 +8,8 @@
 - make .AppImage executable: `chmod +x lib/Zadar_Run-aarch64.AppImage`
 
 # Accessing jetson
-Jetson is set up with username and password being 'radar'.
-## Web-interface
+Jetson is set up with username and password 'radar'.
+## Web-interface: to record data
 The test setup proposed, includes a self hosted website
 which can be used to start and stop ros-recordings.
 This has not been tested extensively, use with caution.
