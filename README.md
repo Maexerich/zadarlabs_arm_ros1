@@ -22,6 +22,8 @@ There are different ways available to start and stop the recording;
 - via ssh & using the terminal (robust, but more advanced)
 Details on the `master.launch` can be found below.
 
+The recorded bags appear in the `bags/` directory (not tracked by git).
+
 ## Web-interface: to record data
 The test setup proposed, includes a self hosted website
 which can be used to start and stop ros-recordings.
