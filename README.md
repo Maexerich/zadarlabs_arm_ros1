@@ -1,8 +1,6 @@
 # Attention
-> **Bugs:**
-- When booting up jetson, remove ethernet cable from jetson's ethernet port. For some reason the jetson will not boot properly with this connected!
-**Warnings:**
-- The ZadarLabs sensor gets extremely warm when in use for prolonged time (>20min). Be careful when handling and do not leave unattended!!!
+> **Bugs:** When booting up jetson, remove ethernet cable from jetson's ethernet port. For some reason the jetson will not boot properly with this connected!
+> **Warnings:** The ZadarLabs sensor gets extremely warm when in use for prolonged time (>20min). Be careful when handling and do not leave unattended!!!
 
 # Compatibility
 - ARM system architecture
