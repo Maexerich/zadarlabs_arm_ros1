@@ -17,6 +17,8 @@ Website should be self explanatory.
 Last I checked, the IP of the jetson in the flynet-an network was 10.10.10.241. It should be assigned as a static IP, but still might change.
 Find IP by running `hostname -I` when connected to respective network.
 
+For the flynet-an network with IP 10.10.10.241 website should be at: http://10.10.10.241:5000
+
 The source code for the web-app can be found on the jetson in 
 the `~/Documents/radar_web_app_control` directory or at: 
 [Radar Test Rig Web Application Control](https://github.com/Maexerich/radar_web_app_control).
