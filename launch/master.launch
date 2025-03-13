@@ -11,6 +11,7 @@
         <arg name="radar_on" value="true"/>
         <arg name="radar_trigger" value="false"/>
         <arg name="imu_on" value="true"/>
+        <arg name="imu_filter_on" value="true"/>
     </include>
 
     <!-- ROS Bag recording using record_bag.sh -->

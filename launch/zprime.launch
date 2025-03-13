@@ -6,7 +6,7 @@
     <arg name="radar_mode" default="1"/>
     <arg name="radar_enable_viewer" default="false"/>
     <arg name="radar_enable_logging" default="false"/>
-    <arg name="radar_override_timestamp" default="false"/>
+    <arg name="radar_override_timestamp" default="on"/>
 
     <!-- Launch the radar node with passed arguments -->
     <node pkg="zadarlabs_arm_ros1" type="run_radar.sh" name="zadarlabs_zprime" output="screen"
